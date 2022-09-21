@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6b6a6a;
+}
+
+.nav {
+  background: #072436;
+  height: 75px;
+  font-size: 1.5rem;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 15px 25px;
+}
+.container {
+  width: 100%;
+  height: 125%;
+  background-color: #6b6a6a;
+  color: #fff;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  font-family: poppins;
+  grid-template-areas:
+    "user-info class-sched class-sched"
+    "user-info belt-prog class-history";
+}
+.container .user {
+  /* grid-column: span 2; */
+  /* grid-row: -1; */
+  background: #256d83;
+  height: 100%;
+  grid-area: user-info;
+}
+.container .user .user-information {
+  width: 100%;
+  text-align: center;
+}
+
+.container .user .user-image {
+  width: 80px;
+  height: 80px;
+  margin: 5rem auto 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.15);
+  border: 2px solid #78c2d9;
+}
+
+.container .user .user-information .personal-details {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: start;
+  padding: 2.5rem;
+}
+.container .user .user-information .personal-details .row {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .user .user-information .personal-details .bottom {
+  text-align: right;
+}
+
+.container .class-schedule {
+  margin: 25px 25px 0 0;
+  grid-column: span 6;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 2rem;
+  grid-area: class-sched;
+}
+.container .class-schedule h2 {
+  background: #235e85;
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+}
+.container .class-schedule table {
+  border-collapse: separate;
+  border-spacing: 0 2rem;
+}
+.container .class-schedule table th {
+  font-size: 1.2rem;
+  background-color: #4287f5;
+  color: #fff !important;
+}
+
+.container .class-schedule table th,
+.container .class-schedule table td {
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+  color: #000;
+}
+
+/* Hover Effect */
+.container .class-schedule table tr:hover {
+  background-color: rgba(6, 150, 112, 0.511);
+  /* background-color: rgb(31, 144, 123); */
+}
+
+/* Wow Moment */
+
+.container .class-schedule table tr .check-in-btn {
+  /* border: none !important; */
+  margin: 0;
+  padding: 0.3em;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #0e5ede;
+  color: #ffffff;
+  font-size: 1em;
+  display: none;
+}
+.container .class-schedule table tr:hover .check-in-btn {
+  display: initial;
+}
+
+/* - */
+
+.class-schedule table tr:hover + .check-in-btn {
+  background-color: yellow;
+  display: block;
+  transition: font-size 1.5s ease-out;
+}
+
+.container .class-schedule table tr .check-in-btn:hover {
+  cursor: pointer;
+}
+
+/* Belt Progression */
+
+.container .belt-progression {
+  grid-column: 3 / span 3;
+  margin: 0 0 25px 0;
+  background: #fff;
+  text-align: center;
+  border-radius: 2rem;
+  grid-area: belt-prog;
+}
+.container .belt-progression .belt-img {
+  margin: 5rem auto 3rem;
+}
+.container .belt-progression h2 {
+  background: #235e85;
+  padding: 1.5rem;
+  border-radius: 2rem 2rem 0 0;
+}
+.container .belt-progression h3 {
+  color: #000;
+}
+
+.container .belt-progression .belt-hours-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* background: green; */
+}
+.container .belt-progression .belt-hours {
+  margin: 0 5px;
+}
+.container .belt-progression .belt-hours-text {
+  font-size: 1.8rem;
+}
+.container .belt-progression .belt-hours-num {
+  font-size: 2.2rem;
+}
+
+/* Attendance History */
+
+.container .class-history {
+  margin: 0 25px 25px 0;
+  grid-column: span 3;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 2rem;
+  grid-area: class-history;
+}
+.container .class-history h2 {
+  background: #235e85;
+  padding: 1.5rem;
+  border-radius: 2rem 2rem 0 0;
+}
+.container .class-history table {
+  border-spacing: 0 0.5rem;
+  color: #000;
+}
+.container .class-history th {
+  font-size: 1.2rem;
+  width: 150px;
+  padding: 0.5rem 0;
+}
+
+/* Double check */
+.container3 {
+  background-color: #6b6a6a;
+  color: #000;
+  grid-gap: 25px;
+  grid-template-columns: repeat(8, 1fr);
+  font-family: poppins;
+  display: flex;
+  justify-content: center;
+  /* min-height: 800px; */
+  /* height: 100vh; */
+  /* margin-bottom: 0;
+  padding-bottom: 0; */
+}
+.container3 .ranks {
+  width: 1500px;
+  margin: 2.5rem 0;
+  grid-column: span 6;
+  background: #fff;
+  display: inherit;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 2rem;
+  /* min-height: 800px; */
+}
+.container3 .ranks h2 {
+  background: #235e85;
+  padding: 2rem;
+  border-radius: 2rem 2rem 0 0;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.container3 .ranks .ranks-inner {
+  /* background:  */
+}
+.container3 .ranks .ranks-inner .rank {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+
+/* Ranks / Billing */
+
+.container3 .ranks .ranks-inner #billing-row {
+  font-size: 1.8rem;
+  background-color: rgb(9, 68, 162);
+  padding: 1rem;
+  color: #ffffff;
+}
+.container3 .ranks .ranks-inner .rank .amount {
+  font-size: 1.5rem;
+}
+.container3 .ranks .ranks-inner .rank h3 {
+  margin: 0 2rem;
+}
+.container3 .ranks .ranks-inner .rank img {
+  width: 15rem;
+  height: 80px;
+  margin: 0 5rem;
+}
+.container3 .contact-container {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+}
+.container3 .contact-container .contact-left {
+  width: 80rem;
+}
+.container3 .contact-container .contact-left .row {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container3 .contact-container .contact-left .row input {
+  padding: 2rem 2rem 2rem 1rem;
+  margin: 0 2rem;
+  height: 2rem;
+  width: 30rem;
+  font-size: 20px;
+  margin-top: 1rem;
+  background-color: #080a16;
+  border-radius: 5px;
+}
+.container3 .contact-container .contact-left .row .msg {
+  width: 200px;
+}
+.container3 .contact-container .contact-left .row .msg textarea {
+  padding: 2rem 2rem 2rem 1rem;
+  margin: 0 2rem;
+  height: 2rem;
+  width: 65rem;
+  min-height: 300px;
+  font-size: 20px;
+  margin-top: 1rem;
+  background-color: #080a16;
+  border-radius: 5px;
+}
+.container3 .contact-container .contact-left .row button {
+  background-color: #a11625;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 2rem 2rem 2rem;
+  padding: 0 2rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-self: center;
+  justify-self: center;
+}
+.container3 .contact-container .contact-left .row button:hover {
+  background-color: #080a16;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.container3 .contact-container .contact-right {
+  width: 40rem;
+}
+.container3 .contact-container .contact-right .info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  align-items: center;
+  margin-top: 12.5rem;
+  justify-content: center;
+}
+
+.pop-up-container {
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  position: fixed;
+  background-color: rgba(22, 50, 87, 0.504);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-family: poppins;
+}
+
+.pop-up h1 {
+  color: #ffffff;
+}
+
+.button-row {
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5em;
+  gap: 5%;
+}
+
+.popup-btn {
+  background-color: rgb(19, 77, 128);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-family: poppins;
+  border: 2.5px solid #000000;
+  /* transition: font-size 1s cubic-bezier(0, 2.32, 0.79, -0.7); */
+  transition: font-size 1.5s ease-out;
+}
+
+.popup-btn:hover {
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+.table-header {
+  /* font-size: 1.2rem;
+  background-color: #4287f5;
+  color: #fff !important; */
+  background-color: rgb(9, 68, 162);
+  color: rgb(232, 230, 227) !important;
+  /* margin-bottom: 10px; */
+}
+
+.footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  background: #072436;
+  color: #ffffff;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found a {
+  color: #4979ff;
+  text-decoration: underline;
+}
