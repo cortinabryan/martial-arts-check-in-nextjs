@@ -63,7 +63,7 @@ body {
   text-align: start;
   padding: 2.5rem;
 }
-.container .user .user-information .personal-details .row {
+.container .user .user-information .personal-details .user-row {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
@@ -144,7 +144,7 @@ body {
 
 /* Belt Progression */
 
-.container .belt-progression {
+.container .belt-progress {
   grid-column: 3 / span 3;
   margin: 0 0 25px 0;
   background: #fff;
@@ -152,31 +152,31 @@ body {
   border-radius: 2rem;
   grid-area: belt-prog;
 }
-.container .belt-progression .belt-img {
+.container .belt-progress .belt-img {
   margin: 5rem auto 3rem;
 }
-.container .belt-progression h2 {
+.container .belt-progress h2 {
   background: #235e85;
   padding: 1.5rem;
   border-radius: 2rem 2rem 0 0;
 }
-.container .belt-progression h3 {
+.container .belt-progress h3 {
   color: #000;
 }
 
-.container .belt-progression .belt-hours-row {
+.container .belt-progress .belt-hours-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   /* background: green; */
 }
-.container .belt-progression .belt-hours {
+.container .belt-progress .belt-hours {
   margin: 0 5px;
 }
-.container .belt-progression .belt-hours-text {
+.container .belt-progress .belt-hours-text {
   font-size: 1.8rem;
 }
-.container .belt-progression .belt-hours-num {
+.container .belt-progress .belt-hours-num {
   font-size: 2.2rem;
 }
 
