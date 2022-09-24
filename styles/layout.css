@@ -69,7 +69,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.container .user .user-information .personal-details .bottom {
+.container .user .user-information .personal-details .user-row-bottom {
   text-align: right;
 }
 
