@@ -1,11 +1,6 @@
 import Image from "next/image";
-import { useEffect } from "react";
-import { getAllHistories } from "../clients/histories_client";
-const User = () => {
-  useEffect(() => {
-    getAllHistories().then(console.log);
-  }, []);
 
+const User = () => {
   return (
     <div class="user">
       <div class="user-information">

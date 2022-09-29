@@ -1,3 +1,4 @@
+import CheckInButton from "./CheckInButton.jsx";
 const Table = () => {
   return (
     <table>
@@ -9,13 +10,7 @@ const Table = () => {
         </tr>
         <tr class="table-row">
           <td class="check-in-btn-container">
-            <button
-              class="check-in-btn"
-              data-name="Early Morning"
-              data-time="06:15 AM"
-            >
-              Check-in
-            </button>
+            <CheckInButton name="Early Morning" time="06:15 AM" />
             06:15 AM
           </td>
           <td class="test">Early Morning</td>
@@ -23,13 +18,7 @@ const Table = () => {
         </tr>
         <tr class="'table-row">
           <td class="check-in-btn-container">
-            <button
-              class="check-in-btn"
-              data-name="Beginner"
-              data-time="09:00 AM"
-            >
-              Check-in
-            </button>
+            <CheckInButton name="Beginner" time="09:00 AM" />
             09:00 AM
           </td>
           <td class="test">Beginner</td>
@@ -37,13 +26,7 @@ const Table = () => {
         </tr>
         <tr class="table-row">
           <td class="check-in-btn-container">
-            <button
-              class="check-in-btn"
-              data-name="Intermediate/Advanced"
-              data-time="10:00 AM"
-            >
-              Check-in
-            </button>
+            <CheckInButton name="Intermediate/Advanced" time="10:00 AM" />
             10:00 AM
           </td>
           <td class="test">Intermediate/Advanced</td>
@@ -51,13 +34,7 @@ const Table = () => {
         </tr>
         <tr class="table-row">
           <td class="check-in-btn-container">
-            <button
-              class="check-in-btn"
-              data-name="Kids 4-12 years"
-              data-time="05:00 PM"
-            >
-              Check-in
-            </button>
+            <CheckInButton name="Kids 4-12 years" time="05:00 PM" />
             05:00 PM
           </td>
           <td class="test">Kids 4-12 years</td>
@@ -65,13 +42,7 @@ const Table = () => {
         </tr>
         <tr class="table-row">
           <td class="check-in-btn-container">
-            <button
-              class="check-in-btn"
-              data-name="Beginner"
-              data-time="06:00 PM"
-            >
-              Check-in
-            </button>
+            <CheckInButton name="Beginner" time="06:00 PM" />
             06:00 PM
           </td>
           <td class="test">Beginner</td>
@@ -79,13 +50,7 @@ const Table = () => {
         </tr>
         <tr class="table-row">
           <td class="check-in-btn-container">
-            <button
-              class="check-in-btn"
-              data-name="Intermediate/Advanced"
-              data-time="07:00 PM"
-            >
-              Check-in
-            </button>
+            <CheckInButton name="Intermediate/Advanced" time="07:00 PM" />
             07:00 PM
           </td>
           <td class="test">Intermediate/Advanced</td>

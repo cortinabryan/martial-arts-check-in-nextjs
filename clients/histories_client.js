@@ -5,4 +5,6 @@ export const getAllHistories = async () => {
   return response.data;
 };
 
-export const checkIn = async () => {};
+export const checkIn = async ({ name, time }) => {
+  const response = await Axios.post("/histories", { name, time });
+};
